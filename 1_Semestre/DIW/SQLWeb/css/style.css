@@ -11,6 +11,7 @@ main{
     justify-content: center;
     align-items: center;
     background-color: #00ced1;
+    position: relative;
 }
 
 .formulario{
@@ -48,8 +49,71 @@ main{
     border-radius: 10px;
 }
 
-#erro{
+.erro{
     color: red;
     font-size: 14px;
     margin: 10px 0;
+}
+
+#alertaBox{
+    position: absolute;
+    bottom: 30px;
+    right: 0;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    overflow: hidden;
+    padding: 20px;
+    
+}
+@keyframes sairCantoDireito {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+
+.alerta{
+    width: 400px;
+    height: 80px;
+    background-color: rgba(255, 255, 255, 1);
+    font-weight: 500;
+    margin: 15px 30px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+    display: flex;
+    align-items: center;
+    position: relative;
+    animation: changeBackgroundColor 15s forwards;
+    animation: sairCantoDireito 1s forwards;
+}
+
+.alerta i{
+    margin: 0 20px;
+    font-size: 35px;
+    color: red;
+}
+
+.alerta::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 5px;
+    background: red;
+    animation: anim 4s linear forwards;
+}
+@keyframes anim {
+    100%{
+        width: 0;
+    }
+}
+
+@keyframes changeBackgroundColor {
+    100% {
+        background-color: rgba(255, 255, 255, 0);
+    }
 }
