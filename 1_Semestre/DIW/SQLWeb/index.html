@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Formulario</title>
+</head>
+<body>
+    <main>
+        <div class="formulario">
+            <div class="form-input">
+                <label>Usuario:</label>
+                <input type="text" id="user">
+            </div>
+            <div class="form-input">
+                <label>Email:</label>
+                <input type="text" id="email">
+            </div>
+            <div class="form-input">
+                <label>Senha:</label>
+                <input type="password" id="pass">
+            </div>
+            <div class="form-input">
+                <label>Confirmar Senha:</label>
+                <input type="password" id="confirmpass">
+            </div>
+            <button type="submit" onclick="cadastro()" id="btn">Cadastrar</button>
+            <span id="erro"></span>
+        </div>
+    </main>
+    <script src="scripts/app.js"></script>
+</body>
+</html>
