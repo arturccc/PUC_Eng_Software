@@ -6,12 +6,30 @@
 
 main{
     width: 100vw;
-    height: 100vh;
+    height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #00ced1;
     position: relative;
+}
+
+nav{
+    width: 100vw;
+    height: 10vh;
+    background-color: #d1d1d1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer{
+    width: 100vw;
+    height: 10vh;
+    background-color: #d1d1d1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .formulario{
@@ -43,16 +61,10 @@ main{
     outline: none;
 }
 
-.formulario button{
+.btn{
     background-color: #00ced1;
     padding: 1vh 1vw;
     border-radius: 10px;
-}
-
-.erro{
-    color: red;
-    font-size: 14px;
-    margin: 10px 0;
 }
 
 #alertaBox{
@@ -116,4 +128,14 @@ main{
     100% {
         background-color: rgba(255, 255, 255, 0);
     }
+}
+
+.msg{
+    border: 2px solid black;
+    padding: 5vw;
+    border-radius: 25px;
+    background-color: #d1d1d1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }

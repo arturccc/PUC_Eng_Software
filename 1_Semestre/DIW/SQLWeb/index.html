@@ -7,6 +7,7 @@
     <title>Formulario</title>
 </head>
 <body>
+    <nav><h1>Isso é um cabeçalho</h1></nav>
     <main>
         <div class="formulario">
             <div class="form-input">
@@ -25,11 +26,16 @@
                 <label>Confirmar Senha:</label>
                 <input type="password" id="confirmpass">
             </div>
-            <button type="submit" onclick="cadastro()" id="btn">Cadastrar</button>
+            <button type="submit" onclick="cadastro()" id="btn" class="btn">Cadastrar</button>
         </div>    
         <div id="alertaBox"></div>
     </main>
-    
+    <footer><h1>Isso é um rodape</h1></footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            verificacao();
+        });
+    </script>
     <script src="scripts/app.js"></script>
     <script src="https://kit.fontawesome.com/9e172ede83.js" crossorigin="anonymous"></script>
 </body>

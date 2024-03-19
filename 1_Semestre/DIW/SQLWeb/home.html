@@ -10,15 +10,20 @@
     <nav><h1>Isso é um cabeçalho</h1></nav>
     <main>
         <div class="msg">
-            <h1>Deseja salvar seus dados em seu browser e criar sua conta?</h1>
-            <div>
-                <button type="submit" onclick="savetrue()" class="btn">Sim</button>
-                <button type="submit" onclick="savefalse()" class="btn">Não</button>
-            </div>
+            <h1 id="bv"></h1>
+            <p id="usr"></p>
+            <p id="eml"></p>
+            <p id="sen"></p>
+            <button type="submit" onclick="delet()" class="btn">Excluir</button>
         </div>
     </main>
     <footer><h1>Isso é um rodape</h1></footer>
-    
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            home();
+        });
+    </script>
     <script src="scripts/app.js"></script>
     <script src="https://kit.fontawesome.com/9e172ede83.js" crossorigin="anonymous"></script>
 </body>
