@@ -103,10 +103,6 @@ function home(){
     let eml = document.getElementById('eml');
     let sen = document.getElementById('sen');
 
-    console.log(usr);
-    console.log(eml);
-    console.log(sen);
-
     let user = localStorage.getItem("user");
     let email = localStorage.getItem("email");
     let pass = localStorage.getItem("pass");
